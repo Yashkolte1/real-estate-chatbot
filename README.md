@@ -276,84 +276,12 @@ Returns highest-frequency values.
 
 ---
 
-# 🧪 Testing & Diagnostics
 
-### Test API quickly:
-```
-python test_api.py
-```
-
-### Debug endpoint:
-```
-GET /api/debug
-```
-Shows:
-- Headers  
-- Price/demand columns  
-- Preview rows  
-- Areas detected  
-- File load status  
-
----
-
-# 🏭 Production Notes
-
-### Recommended:
-- Deploy backend via **Gunicorn/Waitress**
-- Host frontend as static build (Nginx/Netlify/Vercel)
-- Limit file upload size
-- Add authentication for internal use
-- Move uploaded files to cloud (Azure/AWS/S3)
-
-### Environment variables:
-```
-REACT_APP_API_BASE=http://your-domain/api
-```
-
----
-
-# ❓ Troubleshooting / FAQs
-
-### ❌ “No records found”
-Check `/api/areas` for exact spelling.
-
-### ❌ “Charts empty”
-Price/demand column auto-detection may have failed →  
-Select columns manually using dropdowns.
-
-### ❌ Backend error: sample not found
-Ensure `sample_realestate.xlsx` exists in `backend/sample_data`.
-
----
-
-# 🤝 Contributing
-
-Pull requests are welcome.  
-Please include tests for Excel parsing logic and numeric detection.
-
----
-
-# 📄 License
-MIT License (modify as needed)
-
----
 
 # 👤 Author / Contact
 
 **Yash Kolte**  
-Email: *your-email-here*  
+Email: *yashkolte2994@gmail.com*  
 GitHub: [Yashkolte1](https://github.com/Yashkolte1)
 
 ---
-
-# 📝 Changelog
-
-### v1.0
-- Initial version  
-- Flask backend for Excel parsing  
-- React chat UI  
-- Price trend chart  
-- Demand distribution chart  
-- CSV download  
-- File upload  
-- Debug & diagnostics tools
