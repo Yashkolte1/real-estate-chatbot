@@ -1,14 +1,14 @@
-# 🏡 Mini Real Estate Chatbot – Excel-Based Analytics Assistant
+#  Mini Real Estate Chatbot – Excel-Based Analytics Assistant
 
 A chat-driven, smart analytics demo for real-estate Excel datasets.  
 Ask the app something like **“Analyze Wakad”**, **“Show price trends for Aundh”** or **“Which area has highest demand?”**, and it returns:
 
-- 📌 A clean, human-readable **summary**
-- 📈 A **time-series price chart**
-- 🥧 A **demand distribution pie chart**
-- 📊 A **filtered data table**
-- ⬇️ **CSV download**
-- 📁 Optional **Excel upload** to analyze custom datasets
+-  A clean, human-readable **summary**
+-  A **time-series price chart**
+-  A **demand distribution pie chart**
+-  A **filtered data table**
+-  **CSV download**
+-  Optional **Excel upload** to analyze custom datasets
 
 This project contains:
 
@@ -20,7 +20,7 @@ This project contains:
 
 ---
 
-# 📚 Table of Contents
+#  Table of Contents
 1. Features  
 2. Architecture & Data Flow  
 3. File Structure  
@@ -38,22 +38,22 @@ This project contains:
 
 ---
 
-# 🚀 Features
+#  Features
 
-### 💬 Conversational Search  
+###  Conversational Search  
 Ask natural-language questions like:  
 - “Analyze Wakad”  
 - “Price trend in Aundh”  
 - “Demand for Kharadi”  
 
-### 🧠 Automatic Data Understanding  
+###  Automatic Data Understanding  
 Backend auto-detects:
 - Price-like numeric columns  
 - Demand-like columns  
 - Area/locality columns  
 - Date/year information  
 
-### 📈 Analytics Components  
+###  Analytics Components  
 - **Line Chart:** Time-series avg price trend  
 - **Pie Chart:** Demand distribution  
 - **Table:** Filtered dataset preview  
@@ -63,13 +63,13 @@ Backend auto-detects:
 Supports `.xlsx` files:  
 Upload → Backend parses → Frontend updates instantly
 
-### 🌓 Dark Themed Responsive UI  
+###  Dark Themed Responsive UI  
 Optimized for desktop & mobile  
 Smooth animations & clean layout
 
 ---
 
-# 🏗 Architecture & Data Flow
+#  Architecture & Data Flow
 
 ```
 React Frontend (Chat UI)
@@ -136,9 +136,9 @@ real-estate-chatbot/
 
 ---
 
-# ⚡ Quick Start (Windows PowerShell)
+#  Quick Start (Windows PowerShell)
 
-## 1️⃣ Clone the Repo
+##  Clone the Repo
 ```
 git clone https://github.com/Yashkolte1/real-estate-chatbot.git
 cd real-estate-chatbot
@@ -146,7 +146,7 @@ cd real-estate-chatbot
 
 ---
 
-# 🖥 Backend Setup (Flask)
+#  Backend Setup (Flask)
 
 ## Install dependencies:
 ```
@@ -168,7 +168,7 @@ http://localhost:8000/api
 
 ---
 
-# 🎨 Frontend Setup (React)
+#  Frontend Setup (React)
 
 ```
 cd ../frontend
@@ -184,7 +184,7 @@ http://localhost:3000
 
 ---
 
-# 🔗 API Reference
+#  API Reference
 
 ### GET `/api/query`
 Analyze an area or query.
@@ -250,7 +250,7 @@ Returns CSV filtered by area.
 
 ---
 
-# 📊 Data Normalization (How Backend Processes Excel)
+#  Data Normalization (How Backend Processes Excel)
 
 ### ✔ Price-like values  
 `₹ 1,25,000` → `125000.0`  
@@ -278,7 +278,7 @@ Returns highest-frequency values.
 
 
 
-# 👤 Author / Contact
+#  Author / Contact
 
 **Yash Kolte**  
 Email: *yashkolte2994@gmail.com*  
