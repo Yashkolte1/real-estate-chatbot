@@ -1,0 +1,59 @@
+.app-root { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#071023; color:#FFFFFF; min-height:100vh; }
+/* Ensure headings are high-contrast white for readability */
+.app-root h1, .app-root h2, .app-root h3, .app-root h4, .app-root h5, .app-root h6 {
+	color: #FFFFFF;
+}
+/* Ensure small labels, paragraphs and card helper text are white and override bootstrap muted styles */
+.app-root small, .app-root p, .app-root .card p, .app-root .card small {
+  color: #FFFFFF !important;
+}
+.chat-window { border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); height: 520px; display:flex; flex-direction:column; justify-content:flex-end; background:linear-gradient(180deg, #071023 0%, #06121e 100%); }
+.message-list { padding: 12px; overflow-y: auto; max-height: 430px; }
+.message { margin-bottom: 10px; max-width: 90%; }
+.message-user { align-self: flex-end; text-align: right; }
+.message-bot { align-self: flex-start; text-align: left; }
+.message-text { padding: 8px 12px; border-radius: 14px; background: rgba(255,255,255,0.04); display:inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.2); color: #FFFFFF }
+.message-user .message-text { background: linear-gradient(90deg,#00a3ff,#0066ff); color: white; }
+.card { border-radius: 12px; box-shadow: 0 10px 30px rgba(2,6,23,0.6); background: linear-gradient(180deg,#071423,#07121a); border:1px solid rgba(255,255,255,0.04); }
+.controls { display:flex; gap:8px; }
+.charts-row { display:flex; gap:12px; align-items:stretch; }
+.chart-box { flex:1; padding:12px; border-radius:8px; background: linear-gradient(180deg,#081622,#07121a); border:1px solid rgba(255,255,255,0.03); }
+.table-container { max-height: 260px; overflow-y:auto; }
+
+/* table styles for dark theme */
+table.table {
+	color: #FFFFFF;
+}
+table.table thead th {
+	color: #FFFFFF;
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+table.table tbody td {
+	color: #FFFFFF;
+	border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+table.table thead th { background: transparent; }
+table.table tbody td { background: transparent; }
+
+.form-select option, .form-control option {
+	background: #071423;
+	color: #FFFFFF;
+}
+.form-select:focus, .form-control:focus {
+	box-shadow: 0 0 0 0.15rem rgba(0,163,255,0.15);
+	outline: none;
+}
+.table-container button { background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,0.04); }
+
+/* small UI helpers */
+.form-select, .form-control {
+	background: rgba(255,255,255,0.02);
+	color: #FFFFFF;
+	border: 1px solid rgba(255,255,255,0.04);
+}
+.btn-primary { background: linear-gradient(90deg,#00a3ff,#0066ff); border:none; }
+.btn-outline-secondary { color:#FFFFFF; border-color: rgba(255,255,255,0.06); }
+
+/* charts container fix */
+.chart-box canvas { background: transparent !important; }
